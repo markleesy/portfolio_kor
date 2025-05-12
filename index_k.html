@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이수영 | 커뮤니케이션과 기술을 연결하는 설계자</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nanum Gothic', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      display: flex;
+    }
+
+    aside {
+      width: 220px;
+      background-color: #2c2f4a;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 40px 20px;
+    }
+
+    aside h2 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    aside nav a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin: 15px 0;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    aside nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      margin-left: 220px;
+      flex: 1;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section {
+      margin-bottom: 80px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-left: 5px solid #4e54c8;
+      padding-left: 10px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .highlight {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .highlight:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .resources {
+      display: none;
+      margin-top: 15px;
+    }
+
+    .highlight:hover .resources {
+      display: block;
+    }
+
+    .resources img,
+    .resources a {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #2c2f4a;
+      color: #ccc;
+    }
+
+    .contact-box {
+      text-align: center;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-box a {
+      text-decoration: none;
+      color: #4e54c8;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      aside {
+        display: none;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <aside>
+    <h2>이수영<br><span id="typing"></span></h2>
+    <img src="images/sooyoung.jpg" alt="이수영 프로필 사진" style="width:100%; border-radius:12px; margin-bottom:10px;">
+    <h3 style="font-size: 0.95em; color: #ccc;"><span id="typing"></span></h3>
+    <nav id="sidebar-nav">
+      <a href="#education">학력</a>
+      <a href="#mission">나의 비전</a>
+      <a href="#showcase">대표 프로젝트</a>
+      <a href="#career">경험 & 활동</a>
+      <a href="#contact">연락하기</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="education">
+      <h2 class="section-title">🎓 학력</h2>
+      <div class="grid-2">
+        <div class="highlight">
+          <h3>유타대학교</h3>
+          <p>커뮤니케이션 학사 (2020 - 2025)</p>
+          <p>정보시스템 부전공</p>
+        </div>
+        <div class="highlight">
+          <h3>유타대학교</h3>
+          <p>정보시스템 석사 (2025 - )</p>
+        </div>
+      </div>
+
+      <section id="mission">
+        <h2 class="section-title">🌟 나의 비전</h2>
+        <div class="highlight">
+          <p>저는 커뮤니케이션 전공과 IT 지식을 바탕으로, 복잡한 정보를 쉽고 설득력 있게 전달하는 데 집중하며 데이터와 기술, 그리고 사람 사이의 연결고리를 만드는 것이 제 열정입니다. 기술,
+            데이터, 비즈니스 전략에 열정을 가지고 있습니다. 이번 가을에는 커뮤니케이션과 기술의 격차를 해소할 수 있는 정보시스템 석사 과정을 시작하게 되어 기쁩니다.<br>
+
+            스토리텔링과 문제 해결에 대한 탄탄한 기반을 바탕으로 데이터 분석, IT 전략, 사이버 보안과 같은 분야에 뛰어들고 있으며, 이 모든 분야는 비즈니스에서 더 현명한 결정과 의미 있는
+            혁신을 촉진하는 것을 목표로 하고 있습니다.<br>
+
+            저는 항상 영향력 있는 기술에 대한 비전을 공유하는 미래 지향적인 전문가 및 동료들과 배우고, 협력하고, 소통하는 것을 열망합니다.</p>
+        </div>
+      </section>
+
+      <section id="showcase">
+        <h2 class="section-title">🚀 대표 프로젝트</h2>
+        <div class="grid-2">
+          <div class="highlight">
+            <h3>Django 주차권 시스템</h3>
+            <p>Django 활용하여 CRUD 기능 및 API 연동이 가능한 웹사이트 개발.</p>
+            <div class="resources">
+              <a href="pdfs/IS 4460 Final Project Documentation.pdf" target="_blank">📄 주차권 웹사이트 개요</a>
+            </div>
+          </div>
+          <div class="highlight">
+            <h3>Retool AI 챗봇 플랫폼 개발</h3>
+            <p>Retool을 활용하여 병원 내 챗봇 서비스를 구현.</p>
+            <div class="resources">
+              <a href="pdfs/AI_Hackathon_Web_Demo_SP25.pdf" target="_blank">📄 챗봇 데모</a>
+              <a href="pdfs/AI Competition_Presentation_SP25.pdf" target="_blank">📊 챗봇 발표자료</a>
+              <img src="images/1744359522896-4.jpg" alt="챗봇 이미지" width="100%" />
+            </div>
+          </div>
+          <div class="highlight">
+            <h3>데이터 기반 광고 분석</h3>
+            <p>트위터 API 데이터를 활용해 슈퍼볼 광고 효과 분석.</p>
+            <div class="resources">
+              <a href="pdfs/Game_Day_Whitepaper_SP25.pdf" target="_blank">📄 분석 보고서 PDF</a>
+              <a href="pdfs/Game_Day_Infographic_SP25.pdf" target="_blank">📊 분석 발표자료 PDF</a>
+            </div>
+          </div>
+          <div class="highlight">
+            <h3>도모 레이톤 해커톤</h3>
+            <p>Domo를 활용하여 Layton사 작업현장에서의 안전사고와 관련된 변수를 식별.</p>
+            <div class="resources">
+              <a href="pdfs/Domo-Layton_FA24.pdf" target="_blank">📊 도모-레이톤 분석 발표자료 PDF</a>
+            </div>
+          </div>
+          <div class="highlight">
+            <h3>소셜 마케팅 캠페인</h3>
+            <p>Adobe Express를 사용한 Tech-moms 캠페인 기획 및 실행.</p>
+            <div class="resources">
+              <a href="pdfs/Adobe_Social_Impact_Challenge_FA24.pdf" target="_blank">📊 마케팅 슬라이드</a>
+              <img src="images/small-biz-social-media-marketing.png" alt="마케팅 이미지" width="100%" />
+            </div>
+          </div>
+          <div class="highlight">
+            <h3>Salesforce 챗봇 개발</h3>
+            <p>Salesforce CRM 플랫폼 활용하여 챗봇 설계 및 개발.</p>
+            <div class="resources">
+              <a href="pdfs/IDEAthon Documentation_FA24.pdf" target="_blank">📄 Salesforce 챗봇 데모</a>
+              <a href="pdfs/Salesforce IDEAthon_FA24.pdf" target="_blank">📊 Salesforce 챗봇 발표자료</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="career">
+        <h2 class="section-title">💼 경험 & 활동</h2>
+        <div class="grid-2">
+          <div class="highlight">
+            <h3>대한민국 특수전사령부 통역병</h3>
+            <p>한미연합 훈련 통역 및 번역, 공수기본과정 수료</p>
+            <div class="resources">
+              <a href="pdfs/airborne_certificate.pdf">📜 공수기본 수료증</a>
+              <img src="images/22-1_CCPT.jpg" alt="연합훈련련" width="100%" />
+            </div>
+          </div>
+          <div class="highlight">
+            <h3>유타대학교 아시아캠퍼스 인턴</h3>
+            <p>외부협력 및 동문행사 기획, SNS 홍보</p>
+            <div class="resources">
+              <a href="#">📸 행사 사진 모음</a>
+              <img src="images/Alumni_Night_Event.jpg" alt="동문 행사 이미지" width="100%" />
+            </div>
+          </div>
+          <div class="highlight">
+            <h3>KDVA 연구 인턴</h3>
+            <p>한미동맹 관련 기사 집필 및 소셜 콘텐츠 기획</p>
+            <div class="resources">
+              <a href="pdfs/KDVA Journal 25-1_English.pdf">📰 25-1 KDVA 뉴스레터</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">📬 연락하기</h2>
+        <div class="contact-box">
+          <p>📞 전화: 010-7924-7060</p>
+          <p><a href="mailto:markleesy@naver.com">markleesy@naver.com</a></p>
+        </div>
+      </section>
+
+      <footer>
+        © 2025 이수영. 모든 권리 보유.
+      </footer>
+  </main>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('#sidebar-nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    const typingTarget = document.getElementById("typing");
+    const typingText = "커뮤니케이션과 기술을 연결하는 설계자";
+    let index = 0;
+    function typingEffect() {
+      if (index < typingText.length) {
+        typingTarget.textContent += typingText.charAt(index);
+        index++;
+        setTimeout(typingEffect, 150);
+      }
+    }
+    typingEffect();
+  </script>
+</body>
+
+</html>
